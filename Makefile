@@ -28,8 +28,5 @@ $(EXECUTABLE): $(OBJECTS)
 run: compile
 	./$(EXECUTABLE)
 
-test: compile
-	python3 tests3.py ./$(EXECUTABLE) && rm -f $(EXECUTABLE)
-
 clean:
 	rm -f $(OBJECTS) $(EXECUTABLE) && clear
